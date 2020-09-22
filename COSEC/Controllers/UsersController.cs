@@ -59,7 +59,7 @@ namespace COSEC.Controllers
                     break;
             }
 
-            int pageSize = 4;
+            int pageSize = 5;
             return View(await PaginatedList<User>.CreateAsync(users.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 

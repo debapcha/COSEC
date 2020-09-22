@@ -60,7 +60,7 @@ namespace COSEC.Controllers
                     break;
             }
 
-            int pageSize = 4;
+            int pageSize = 5;
             return View(await PaginatedList<ApprovedUser>.CreateAsync(users.AsNoTracking(), pageNumber ?? 1, pageSize));
 
             //return View(await _context.ApprovedUsers.ToListAsync());
